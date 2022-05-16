@@ -23,7 +23,8 @@ export default function NavDot({section, active, setActive}) {
 
   const open = section.slice(1,) === active ? {
       scale: 1.2,
-      color: "white"
+      color: "white",
+      x: 10
   } : {}
 
   return (
@@ -37,6 +38,7 @@ export default function NavDot({section, active, setActive}) {
                 initial={{ scale: 0.8 }}
                 animate={open}
                 onClick={setActive(section.slice(1,))}
+                transition={{type: "spring",}}
             >
                 <CircleIcon />
             </IconButton>

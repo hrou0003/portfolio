@@ -22,15 +22,13 @@ function App() {
     <BrowserRouter>
       <Navbar active={active} setActive={setActivecallback}/>
       <Box sx={{position: "fixed"}}>
-      <Typography variant="h1" component="h1">
-        {active}
-      </Typography>
+
 
       </Box>
-      <Section id="main" setActive={setActivecallback} color="white"/>
+      <Section id="main" setActive={setActivecallback} color="#0B132B"/>
         
-      <Section id="second" setActive={setActivecallback} color="blue" />
-      <Section id="third" setActive={setActivecallback} color="gray">
+      <Section id="second" setActive={setActivecallback} color="#1C2541" />
+      <Section id="third" setActive={setActivecallback} color="#3A506B">
 
       </Section>
 
