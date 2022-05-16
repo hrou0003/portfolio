@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ListItemIcon, ListItem, IconButton } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
-import {Link} from "@mui/material"
+import {Link, Typography } from "@mui/material"
 
 /**
  * This is an example of scale correction in Framer Motion 2.
@@ -19,6 +19,7 @@ import {Link} from "@mui/material"
  *      border-radius: 50px; to the .parent definition in styles.css
  */
 
+
 export default function NavDot({section, active, setActive}) {
 
   const open = section.slice(1,) === active ? {
@@ -33,15 +34,17 @@ export default function NavDot({section, active, setActive}) {
       layout
     >
         <Link href={section}>
-            <IconButton 
-                component={motion.span}
+            <Typography 
+                variant="h4"
+                component={motion.h5}
                 initial={{ scale: 0.8 }}
                 animate={open}
                 onClick={setActive(section.slice(1,))}
                 transition={{type: "spring",}}
+                underline={false}
             >
-                <CircleIcon />
-            </IconButton>
+              {section.slice(1,)}
+            </Typography>
         </Link>
     </ListItem>
   );
