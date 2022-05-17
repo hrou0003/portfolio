@@ -6,7 +6,7 @@ export default function Section({id, setActive, color, children}) {
 
     const [ref, inView] = useInView({
         threshold: [0.6, 0.7 ,1],
-        delay: 150,
+        delay: 50,
         trackVisibility: true,
         onChange: (inView) => {
             if (inView) {

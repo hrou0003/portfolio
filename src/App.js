@@ -1,13 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { Grid, Box, Typography, List, ListItem, } from '@mui/material';
-import { createTheme, responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
+import { Grid, Box, Typography, List, ListItem, createTheme } from '@mui/material';
+import { ThemeProvider } from "@mui/material/styles";
 import Navbar from './components/navigation/Navigation';
 import { BrowserRouter } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Header from './components/title/Title';
 import Section from './components/sections/Section';
-import { useInView } from "react-intersection-observer"
 import { useState } from "react"
 
 function App() {
@@ -19,15 +17,16 @@ function App() {
     setActive(state)
   }
 
-  let theme = createTheme();
+  let theme = createTheme()
 
-  let responsiveText = {
-    lg: 30,
-    md: 20,
-    sm: 15,
-    xs: 10
+  theme.typography.h4 = {
+    [theme.breakpoints.down('md')]: {
+      fontSize: 15,
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 30
+    }
   }
-
 
   return (
     <BrowserRouter>
@@ -48,9 +47,7 @@ function App() {
         marginX="20vw"
         marginY="auto"
         >
-          <Typography variant="h4" color="white" align="center" sx={{
-            fontSize: responsiveText
-          }}>
+          <Typography variant="h4" color="white" align="center">
             Hi, my name is Harrison and I've recently graduated with a degree in applied mathematics.
             At the moment I'm working as a Portfolio Analyst in Credit Risk @BOQ, however, I'm currently on the hunt for opportunities in the world of software development.
             If you're interested in what I'm offering then please reach out below!
@@ -70,7 +67,7 @@ function App() {
         >
           <Grid container spacing={6}>
             <Grid item xs={6}>
-              <Typography color="white" variant="h3" align='center' sx={{fontSize: responsiveText}}>
+              <Typography color="white" variant="h4" align='center' >
                 Education
               </Typography>
               <List>
@@ -82,7 +79,7 @@ function App() {
               </List>
             </Grid>
             <Grid item xs={6}>
-              <Typography color="white" variant="h3" align='center' sx={{fontSize: responsiveText}}>
+              <Typography color="white" variant="h4" align='center' >
                 Work Experience
               </Typography>
             </Grid>
