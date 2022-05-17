@@ -33,18 +33,27 @@ export default function NavDot({section, active, setActive}) {
       component={motion.li}
       layout
     >
-        <Link href={section}>
+        <Link href={section} sx={{ textDecoration: "none"}}>
             <Typography 
                 variant="h4"
                 component={motion.h5}
-                initial={{ scale: 0.8 }}
+                initial={{ color: "gray", scale: 0.8 }}
                 animate={open}
                 onClick={setActive(section.slice(1,))}
-                transition={{type: "spring",}}
                 underline={false}
+                sx={{ display: {xs: 'none', sm: 'none', md: 'block'}}}
             >
               {section.slice(1,)}
             </Typography>
+            <IconButton
+                component={motion.span}
+                initial={{ color: "gray", scale: 0.8 }}
+                animate={open}
+                onClick={setActive(section.slice(1,))}
+                sx={{ display: {md: 'none'}}}
+            >
+                <CircleIcon />
+            </IconButton>
         </Link>
     </ListItem>
   );

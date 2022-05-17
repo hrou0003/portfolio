@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import { Box } from "@mui/material"
 import { useInView } from "react-intersection-observer"
-import { motion } from "framer-motion"
 
 export default function Section({id, setActive, color, children}) {
 
