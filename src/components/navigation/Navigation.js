@@ -25,13 +25,14 @@ function Navbar({active, setActive}) {
             width: "25vw",
             marginY: "20vh",
             marginX: "1vw",
-            position: "fixed"
+            position: "fixed",
+            display: "block"
         }} 
     >
         <List>
-            <NavDot section="#main" active={active}  setActive={setActive}/> 
-            <NavDot section="#second" active={active} setActive={setActive}/>
-            <NavDot section="#third" active={active} setActive={setActive}/>
+            <NavDot section="#about" active={active}  setActive={setActive}/> 
+            <NavDot section="#experience" active={active} setActive={setActive}/>
+            <NavDot section="#skills" active={active} setActive={setActive}/>
         </List>
     </Box>
   );

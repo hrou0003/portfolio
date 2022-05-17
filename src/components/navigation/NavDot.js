@@ -3,7 +3,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ListItemIcon, ListItem, IconButton } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
-import {Link, Typography } from "@mui/material"
+import {Link, Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid, regular, brands } from "@fortawesome/fontawesome-svg-core/import.macro"
 
 /**
  * This is an example of scale correction in Framer Motion 2.
@@ -34,23 +36,24 @@ export default function NavDot({section, active, setActive}) {
       layout
     >
         <Link href={section} sx={{ textDecoration: "none"}}>
-            <Typography 
-                variant="h4"
+            <Typography
+                variant="h5"
                 component={motion.h5}
-                initial={{ color: "gray", scale: 0.8 }}
+                alignContent="left"
+                initial={{ color: "gray", scale: 1 }}
                 animate={open}
                 onClick={setActive(section.slice(1,))}
-                underline={false}
-                sx={{ display: {xs: 'none', sm: 'none', md: 'block'}}}
+                sx={{ display: {xs: 'none', md: 'block'}}}
             >
               {section.slice(1,)}
             </Typography>
             <IconButton
                 component={motion.span}
+                alignContent="center"
                 initial={{ color: "gray", scale: 0.8 }}
                 animate={open}
                 onClick={setActive(section.slice(1,))}
-                sx={{ display: {md: 'none'}}}
+                sx={{ size: "small", display: {md: 'none'}}}
             >
                 <CircleIcon />
             </IconButton>
