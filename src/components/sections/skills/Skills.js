@@ -16,7 +16,6 @@ export default function Skills({ setActivecallback }) {
         width="60vw"
         marginX="20vw"
         marginTop="5vh"
-        marginBottom="2vh"
         component={motion.div}
         initial={{ x: "-40vw" }}
         whileInView={{ x: 0 }}

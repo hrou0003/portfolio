@@ -11,25 +11,24 @@ export default function Experience({ setActivecallback }) {
         display="inline-block"
         width="60vw"
         marginX="20vw"
-        marginY="auto"
+        marginY="10vh"
         component={motion.div}
         initial={{ x: "-40vw" }}
         whileInView={{ x: 0 }}
         overflow="auto"
-        alignItems="center"
       >
         <Paper sx={{ bgcolor: "gray", padding: "1vw" }}>
           <Grid container spacing={6} alignItems="baseline" justifyItems="center" textAlign="center">
-            <Grid item xs={12} md={6} justifyItems="center">
+            <Grid item xs={12} md={6} justifyContent="center">
               <Typography color="white" variant="h3" >
                 Education
               </Typography>
               <List textAlign="center" justifyContent="center">
-                <ListItem>
+                <ListItem justifyContent="center">
                   <ExperienceCard title="Bachelor of Science" subtitle="Applied Mathematics and Computer Science" time="2018-2021" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
                 </ListItem>
                 <ListItem>
-                  <ExperienceCard title="Bachelor of Science" subtitle="Financial Mathematics" time="2022- (Deferred)" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
+                  <ExperienceCard title="Master's" subtitle="Financial Mathematics" time="2022-Present" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
                 </ListItem>
               </List>
             </Grid>

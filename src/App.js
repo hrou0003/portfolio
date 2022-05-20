@@ -26,10 +26,10 @@ function App() {
     color: "white",
     fontWeight: "normal",
     [theme.breakpoints.up('xs')]: {
-      fontSize: 30
+      fontSize: 18
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 30
+      fontSize: 25
     },
     [theme.breakpoints.up('md')]: {
       fontSize: 37,
@@ -43,16 +43,16 @@ function App() {
     color: "white",
     fontWeight: "normal",
     [theme.breakpoints.up('xs')]: {
-      fontSize: 30
+      fontSize: 18
     },
     [theme.breakpoints.down('sm')]: {
-      fontSize: 30
+      fontSize: 24
     },
     [theme.breakpoints.up('md')]: {
-      fontSize: 50,
+      fontSize: 30,
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: 30
+      fontSize: 36
     }
   }
   theme.typography.h6 = {
@@ -100,7 +100,7 @@ function App() {
     },
     [theme.breakpoints.up('lg')]: {
       fontSize: 18
-    }
+    },
   }
   return (
     <BrowserRouter>
