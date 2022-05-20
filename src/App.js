@@ -32,13 +32,76 @@ function App() {
       fontSize: 30
     },
     [theme.breakpoints.up('md')]: {
+      fontSize: 37,
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 40
+    }
+  }
+  
+  theme.typography.h3 = {
+    color: "white",
+    fontWeight: "normal",
+    [theme.breakpoints.up('xs')]: {
+      fontSize: 30
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 30
+    },
+    [theme.breakpoints.up('md')]: {
       fontSize: 50,
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: 60
+      fontSize: 30
+    }
+  }
+  theme.typography.h6 = {
+    fontWeight: "normal",
+    [theme.breakpoints.up('xs')]: {
+      fontSize: 12
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 14
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 18
+    }
+  }
+  
+  theme.typography.subtitle1 = {
+    fontWeight: "gray",
+    [theme.breakpoints.up('xs')]: {
+      fontSize: 10
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 10
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: 14,
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 18
     }
   }
 
+  theme.typography.subtitle2 = {
+    fontWeight: "gray",
+    [theme.breakpoints.up('xs')]: {
+      fontSize: 10
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 10
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: 14,
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: 18
+    }
+  }
   return (
     <BrowserRouter>
     <ThemeProvider theme={theme}>

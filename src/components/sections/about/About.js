@@ -21,7 +21,9 @@ export default function About ({setActivecallback}) {
         textAlign="center"
         >
           <Typography variant="h4" color="white" align="center">
-            About me section!
+            Hi, my name is Harrison and I'm recent graduate in applied mathematics looking to enter the field
+            of software engineering. I'm pursuing this area as it's great way for me to solve problems in a practical and
+            meaningful way.
           </Typography>
         </Box>
       </Section>

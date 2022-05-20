@@ -20,6 +20,7 @@ export default function Section({id, setActive, color, children}) {
         }
     }, [inView])
 
+
     return(
       <Box
        ref={ref}
