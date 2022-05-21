@@ -10,8 +10,8 @@ export default function Experience({ setActivecallback }) {
       <Box
         display="inline-block"
         width="60vw"
-        marginX="20vw"
-        marginY="10vh"
+        maxHeight="95vh"
+        marginX="auto"
         component={motion.div}
         initial={{ x: "-40vw" }}
         whileInView={{ x: 0 }}
