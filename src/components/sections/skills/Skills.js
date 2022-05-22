@@ -34,7 +34,7 @@ export default function Skills({ setActivecallback }) {
             <FontAwesomeIcon icon={brands('node-js')} size="3x" color="white" />
           </Grid>
           <Grid item xs={12}>
-            <Typography marginTop={3} color="white">
+            <Typography marginTop={3} color="white" size="1rem">
               I have 1+ years of development experience in JavaScript. I've developed frontend and backend applications using React and NodeJS.
             </Typography>
           </Grid>

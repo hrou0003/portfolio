@@ -25,35 +25,13 @@ function App() {
   theme.typography.h4 = {
     color: "white",
     fontWeight: "normal",
-    [theme.breakpoints.up('xs')]: {
-      fontSize: 18
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 25
-    },
-    [theme.breakpoints.up('md')]: {
-      fontSize: 37,
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: 40
-    }
+    fontSize: "1.5rem"
   }
   
   theme.typography.h3 = {
     color: "white",
     fontWeight: "normal",
-    [theme.breakpoints.up('xs')]: {
-      fontSize: 18
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 24
-    },
-    [theme.breakpoints.up('md')]: {
-      fontSize: 30,
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: 36
-    }
+    fontSize: "2rem"
   }
   theme.typography.h6 = {
     fontWeight: "normal",
