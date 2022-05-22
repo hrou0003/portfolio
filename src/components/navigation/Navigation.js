@@ -34,6 +34,7 @@ function Navbar({ active, setActive }) {
                 <NavDot section="#about" active={active} setActive={setActive} />
                 <NavDot section="#experience" active={active} setActive={setActive} />
                 <NavDot section="#skills" active={active} setActive={setActive} />
+                <NavDot section="#contact" active={active} setActive={setActive} />
             </List>
         </Box>
     );

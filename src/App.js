@@ -10,6 +10,7 @@ import { useState } from "react"
 import About from './components/sections/about/About';
 import Experience from './components/sections/experience/Experience';
 import Skills from './components/sections/skills/Skills';
+import Contact from './components/sections/contact/Contact';
 
 function App() {
 
@@ -26,6 +27,10 @@ function App() {
     color: "white",
     fontWeight: "normal",
     fontSize: "1.5rem"
+  }
+
+  theme.typography.p = {
+    fontSize: "1rem"
   }
   
   theme.typography.h3 = {
@@ -88,6 +93,7 @@ function App() {
       <About setActivecallback={setActivecallback}/>
       <Experience setActivecallback={setActivecallback}/>
       <Skills setActivecallback={setActivecallback}/>
+      <Contact setActivecallback={setActivecallback}/>
 
 
         
