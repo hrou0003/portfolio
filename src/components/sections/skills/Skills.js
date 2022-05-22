@@ -14,8 +14,8 @@ export default function Skills({ setActivecallback }) {
       <Box
         display="inline-block"
         width="60vw"
+        maxHeight="95vh"
         marginX="20vw"
-        marginTop="5vh"
         component={motion.div}
         initial={{ x: "-40vw" }}
         whileInView={{ x: 0 }}
@@ -53,7 +53,7 @@ export default function Skills({ setActivecallback }) {
             <FontAwesomeIcon icon={solid('database')} size="3x" color="white" />
           </Grid>
           <Grid item xs={12}>
-            <Typography marginTop={3} color="white">
+            <Typography marginTop={3} color="white" fontSize="1rem">
               I also have a strong numerical and mathematical background with a focus on linear and non-linear optimisation. As well as
               being numerically literate, I have strong data skills and am comfortable tackling a wide varierty of data related problems.
             </Typography>

@@ -31,7 +31,7 @@ export default function Section({id, setActive, color, children}) {
          backgroundColor: color,
          display: "flex",
          justifyContent: "center",
-         alignContent: "center"
+         alignItems: "center"
        }} 
       >
           {children}

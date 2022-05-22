@@ -20,7 +20,7 @@ export default function ExperienceCard({ title, subtitle, time, about, image }) 
     const matches = useMediaQuery(theme.breakpoints.up("sm"))
 
     return (
-        <Card sx={{ display: 'flex', width: "20rem" }}>
+        <Card sx={{ display: 'flex', width: "20rem", marginX: "auto" }}>
             <Grid container spacing={3}>
                 <Grid item xs={8}>
                     <CardContent sx={{ flex: '1 0 auto' }}>
