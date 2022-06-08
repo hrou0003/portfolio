@@ -28,7 +28,7 @@ export default function Experience({ setActivecallback }) {
                   <ExperienceCard title="Bachelor of Science" subtitle="Applied Mathematics and Computer Science" time="2018-2021" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
                 </ListItem>
                 <ListItem>
-                  <ExperienceCard title="Master's" subtitle="Financial Mathematics" time="2022-Present" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
+                  <ExperienceCard title="Master" subtitle="Financial Mathematics" time="2022-Present" image="https://ahes.org.au/wp-content/uploads/job-manager-uploads/company_logo/2022/04/monash-university-logo-small.png" />
                 </ListItem>
               </List>
             </Grid>

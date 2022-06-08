@@ -35,7 +35,7 @@ export default function Skills({ setActivecallback }) {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="p" marginTop={3} color="white" size="0.75rem">
-              I have 1+ years of development experience in JavaScript. I've developed frontend and backend applications using React and NodeJS.
+              I have 1 years of development experience in JavaScript. I've developed frontend and backend applications using React and NodeJS.
             </Typography>
           </Grid>
           <Grid item xs={12} display="flex" justifyContent="space-evenly" columnGap={3}>
@@ -44,8 +44,8 @@ export default function Skills({ setActivecallback }) {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="p" marginTop={3} color="white">
-              I have 4+ years of experience with Python which much of it focused on working with data and web frameworks such as Pandas,
-              Django, Flask and scikit-learn.
+              I have 5 years of experience with Python which much of it focused on working with data and web frameworks such as Pandas,
+              Django, FastAPI and scikit-learn.
             </Typography>
           </Grid>
           <Grid item xs={12} display="flex" justifyContent="space-evenly">
